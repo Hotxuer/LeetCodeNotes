@@ -1,11 +1,8 @@
 //
 // Created by mac on 2020/2/1.
 //
-#include <iostream>
-#include <vector>
-#include <map>
 
-using namespace std;
+#include "problem.h"
 
 // 暴力法
 class Solution1 {
