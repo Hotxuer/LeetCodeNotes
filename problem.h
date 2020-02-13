@@ -16,5 +16,4 @@ struct ListNode {
     ListNode *next;
     ListNode(int x) : val(x), next(NULL) {}
 };
-
 #endif //LEETCODENOTE_PROBLEM_H
