@@ -4,41 +4,23 @@
 
 #include "problem.h"
 
-class Solution1 {
+class Solution {
 public:
-    string longestCommonPrefix(vector<string>& strs) {
-        if (!strs.size()) return "";
-        string result("");
-        string first(strs[0]);
-        for (int i=0; i<first.size(); i++) {
-            char temp = first[i];
-            int j=1;
-            for (j=1; j<strs.size(); j++)
-                if (strs[j][i] != temp) break;
-            if (j != strs.size())
-                break;
-            else
-                result += temp;
+    int romanToInt(string s) {
+        int values[] = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+        string strs [] = {"M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"};
+        int result = 0;
+        int pos = 0;
+        for (int i=0; i<13; i++) {
+            while (pos < s.size()) {
+                if (strs[i] == s.substr(pos, strs[i].size())) {
+                    result += values[i];
+                    pos += strs[i].size();
+                } else {
+                    break;
+                }
+            }
         }
         return result;
     }
 };
-
-// 小改进减小内存占用（但不知为什么时间增加了？）
-class Solution2 {
-public:
-    string longestCommonPrefix(vector<string>& strs) {
-        if (!strs.size()) return "";
-        string first(strs[0]);
-        int i=0, j=1;
-        for (int i=0; i<first.size(); i++) {
-            char temp = first[i];
-            for (j=1; j<strs.size(); j++)
-                if (strs[j][i] != temp) break;
-            if (j != strs.size())
-                break;
-        }
-        return first.substr(0, i);
-    }
-};
-
