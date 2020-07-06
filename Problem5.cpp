@@ -32,6 +32,40 @@
      }
  };
 
+// 动态规划不优化版
+class Solution {
+public:
+    string longestPalindrome(string s) {
+        if (s.size()<2) {
+            return s;
+        }
+        int maxLength = 1;
+        int maxStart = 0;
+        vector<vector<int>> palindDp(s.size(), vector<int>(s.size()));
+        for (int i=0; i<s.size(); i++) {
+            palindDp[i][i] = 1;
+        }
+        for (int j=0; j<s.size(); j++) {
+            for (int i=0; i<j; i++) {
+                if (s[i] == s[j]) {
+                    if (j-i<3 || palindDp[i+1][j-1]) {
+                        palindDp[i][j] = 1;
+                        if (j-i+1>maxLength) {
+                            maxLength = j-i+1;
+                            maxStart = i;
+                        }
+                    } else {
+                        palindDp[i][j] = 0;
+                    }
+                } else {
+                    palindDp[i][j] = 0;
+                }
+            }
+        }
+        return s.substr(maxStart, maxLength);
+    }
+};
+
  // 字符串倒置动态规划找最大公共子串（考虑本身带非回文串的倒排串情况的剔除、空间的节省（用同一个一维数组不断覆盖））
  class Solution2 {
  public:

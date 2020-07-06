@@ -31,5 +31,5 @@ public:
             if (nums[j] != nums[i]) nums[++j] = nums[i];
         return ++j;
     }
-}
+};
 
