@@ -71,3 +71,29 @@ private:
     }
 };
 
+// 最简版本，不用重复调用函数
+class Solution3 {
+public:
+    vector<string> letterCombinations(string digits) {
+        vector<string> result;
+        map<char, string> stringMap{{'2', "abc"}, {'3', "def"}, {'4', "ghi"}, {'5', "jkl"},
+                                    {'6', "mno"}, {'7', "pqrs"}, {'8', "tuv"}, {'9', "wxyz"}};
+        for (char d:digits) {
+            if (!result.size()) { // 第一个字母时
+                for (char newChar:stringMap[d]) {
+                    result.push_back(string(1, newChar));
+                }
+            } else { // 已经有字母
+                int size = result.size();
+                for (int i=0; i<size; i++) {
+                    for (char newChar:stringMap[d]) {
+                        result.push_back(result[i]+newChar);
+                    }
+                }
+                result.erase(result.begin(), result.begin()+size);
+            }
+        }
+        return result;
+    }
+};
+
