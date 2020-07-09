@@ -4,7 +4,7 @@
 
 #include "problem.h"
 
-// 递归
+// 递归加DFS
 // class Solution {
 // public:
 //     vector<string> generateParenthesis(int n) {
@@ -24,6 +24,29 @@
 //         return;
 //     }
 // };
+
+// 递归加DFS好懂版本
+class Solution {
+public:
+    vector<string> generateParenthesis(int n) {
+        dfs(n, n, "");
+        return result;
+    }
+private:
+    vector<string> result;
+    void dfs(int left, int right, string str) {
+        if (left==0 && right==0){
+            result.push_back(str);
+        } else {
+            if (left>0) {
+                dfs(left-1, right, str+'(');
+            }
+            if (right>left) {
+                dfs(left, right-1, str+')');
+            }
+        }
+    }
+};
 
 // 动态规划
 // 如果知道了n=k-1全部的组合，求n=k的组合。
@@ -48,8 +71,8 @@
 //     }
 // };
 
-// 动态规划简介版本（不存储之前的结果)
-class Solution {
+// 动态规划简洁版本（不存储之前的结果)
+class Solution2 {
 public:
     vector<string> generateParenthesis(int n) {
         if (n==0) return {""};

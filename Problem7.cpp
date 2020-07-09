@@ -15,7 +15,7 @@ public:
             result = result*10 + x%10;
             x = x/10;
         }
-        cout<<max<<" "<<min;
+        cout<<max<<" "<<min<<endl;
         return (result > max || result < min) ? 0 : result;
     }
 };
