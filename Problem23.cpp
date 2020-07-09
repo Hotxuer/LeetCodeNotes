@@ -44,6 +44,49 @@
 //     }
 // };
 
+// 自己又写了一个朴素算法，没精简，时间不超时
+class Solution2 {
+public:
+    ListNode* mergeKLists(vector<ListNode*>& lists) {
+        if (lists.size()==0) return NULL;
+        bool flag = true;
+        ListNode* result = new ListNode(0);
+        ListNode* temp = result;
+        vector<int> nodeNumbers;
+        for (ListNode* node:lists) {
+            if (node!=NULL) {
+                nodeNumbers.push_back(node->val);
+            } else {
+                nodeNumbers.push_back(INT_MAX);
+            }
+        }
+        while (1) {
+            int minNumber = nodeNumbers[0];
+            int minIndex = 0;
+            for (int i=0; i<nodeNumbers.size(); i++) {
+                if (nodeNumbers[i] < minNumber) {
+                    minNumber = nodeNumbers[i];
+                    minIndex = i;
+                }
+            }
+            if (minNumber != INT_MAX) {
+                temp->next = new ListNode(minNumber);
+                temp = temp->next;
+                if (lists[minIndex]->next!=NULL) {
+                    nodeNumbers[minIndex] = lists[minIndex]->next->val;
+                    lists[minIndex] = lists[minIndex]->next;
+                } else {
+                    nodeNumbers[minIndex] = INT_MAX;
+                }
+            } else {
+                break;
+            }
+        }
+        return result->next;
+
+    }
+};
+
 // 分治法
 class Solution {
 public:
