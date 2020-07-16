@@ -8,6 +8,8 @@
 #include <iostream>
 #include <vector>
 #include <map>
+#include <stack>
+#include <sstream>
 
 using namespace std;
 

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="LeetCodeNote"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/mac/CLionProjects/LeetCodeNote/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/mac/CLionProjects/LeetCodeNote/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/mac/CLionProjects/LeetCodeNote/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/mac/CLionProjects/LeetCodeNote/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/mac/CLionProjects/LeetCodeNote/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/mac/CLionProjects/LeetCodeNote/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/mac/CLionProjects/LeetCodeNote/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/mac/CLionProjects/LeetCodeNote/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/mac/CLionProjects/LeetCodeNote/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/mac/CLionProjects/LeetCodeNote/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/mac/CLionProjects/LeetCodeNote/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/mac/CLionProjects/LeetCodeNote/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/mac/CLionProjects/LeetCodeNote/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/mac/CLionProjects/LeetCodeNote/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/mac/CLionProjects/LeetCodeNote/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LeetCodeNote">
+				<Option output="/Users/mac/CLionProjects/LeetCodeNote/cmake-build-debug/LeetCodeNote" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mac/CLionProjects/LeetCodeNote/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/mac/CLionProjects/LeetCodeNote/cmake-build-debug/Makefile&quot;  VERBOSE=1 LeetCodeNote"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/mac/CLionProjects/LeetCodeNote/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/mac/CLionProjects/LeetCodeNote/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/mac/CLionProjects/LeetCodeNote/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LeetCodeNote/fast">
+				<Option output="/Users/mac/CLionProjects/LeetCodeNote/cmake-build-debug/LeetCodeNote" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mac/CLionProjects/LeetCodeNote/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/mac/CLionProjects/LeetCodeNote/cmake-build-debug/Makefile&quot;  VERBOSE=1 LeetCodeNote/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/mac/CLionProjects/LeetCodeNote/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/mac/CLionProjects/LeetCodeNote/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/mac/CLionProjects/LeetCodeNote/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/Problem1.cpp">
+			<Option target="LeetCodeNote"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/Problem11.cpp">
+			<Option target="LeetCodeNote"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/Problem12.cpp">
+			<Option target="LeetCodeNote"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/Problem13.cpp">
+			<Option target="LeetCodeNote"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/Problem1351.cpp">
+			<Option target="LeetCodeNote"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/Problem1352.cpp">
+			<Option target="LeetCodeNote"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/Problem14.cpp">
+			<Option target="LeetCodeNote"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/Problem15.cpp">
+			<Option target="LeetCodeNote"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/Problem17.cpp">
+			<Option target="LeetCodeNote"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/Problem19.cpp">
+			<Option target="LeetCodeNote"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/Problem2.cpp">
+			<Option target="LeetCodeNote"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/Problem20.cpp">
+			<Option target="LeetCodeNote"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/Problem21.cpp">
+			<Option target="LeetCodeNote"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/Problem22.cpp">
+			<Option target="LeetCodeNote"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/Problem23.cpp">
+			<Option target="LeetCodeNote"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/Problem24.cpp">
+			<Option target="LeetCodeNote"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/Problem25.cpp">
+			<Option target="LeetCodeNote"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/Problem26.cpp">
+			<Option target="LeetCodeNote"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/Problem27.cpp">
+			<Option target="LeetCodeNote"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/Problem28.cpp">
+			<Option target="LeetCodeNote"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/Problem3.cpp">
+			<Option target="LeetCodeNote"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/Problem4.cpp">
+			<Option target="LeetCodeNote"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/Problem5.cpp">
+			<Option target="LeetCodeNote"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/Problem6.cpp">
+			<Option target="LeetCodeNote"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/Problem7.cpp">
+			<Option target="LeetCodeNote"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/Problem8.cpp">
+			<Option target="LeetCodeNote"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/Problem9.cpp">
+			<Option target="LeetCodeNote"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/main.cpp">
+			<Option target="LeetCodeNote"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/problem.h">
+			<Option target="LeetCodeNote"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/LeetCodeNote/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
