@@ -25,13 +25,11 @@
 using namespace std;
 
 int main() {
-    string s;
-    s = "qwdqwd//dw/dw";
-    std::stringstream dw(s);
-    string temp;
+    vector<int> a({2,3,4,5,1});
 
-    while (getline(dw, temp, '/')) {
-        cout<< temp<<endl;
+    sort(a.begin(), a.end());
+    for (int s:a) {
+        cout<<s;
     }
 
     return 0;
